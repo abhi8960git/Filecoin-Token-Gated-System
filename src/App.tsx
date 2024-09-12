@@ -1,6 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "@/components/Navbar";
-import {Home } from "@/pages";
 import SPLTokenLoginCard from "./pages/TokenGated";
 
 function App() {
@@ -9,8 +8,8 @@ function App() {
       <main className="min-h-screen flex flex-col justify-between">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/rt" element={<SPLTokenLoginCard/>} />
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<SPLTokenLoginCard/>} />
           
         </Routes>
       </main>
